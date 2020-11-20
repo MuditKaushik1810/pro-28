@@ -21,11 +21,11 @@ function setup() {
     tree1 = new Tree(900,200,700,700);
 	stone1 = new Stone(410,750,10);
 	boy1 = new Boy(400,720,300,300);
-	mango1 = new Mango(1200,300,100,100);
-	mango2 = new Mango(1400,380,100,100);
-	mango3 = new Mango(1300,250,100,100);
-	mango4 = new Mango(1100,390,100,100);
-  mango5 = new Mango(1300,380,100,100);
+	mango1 = new Mango(1200,300,50,50);
+	mango2 = new Mango(1400,380,50,50);
+	mango3 = new Mango(1300,250,50,50);
+	mango4 = new Mango(1100,390,50,50);
+  mango5 = new Mango(1300,380,50,50);
   //launcher1 = new Launcher(stone1.body,{x:460,y:760});
   //slingshot = new SlingShot(bird.body,{x:200, y:50});
 	Engine.run(engine);
@@ -51,15 +51,15 @@ function draw() {
   //mouseDragged();
 }
 
-/*function mouseDragged(){
+function mouseDragged(){
   Matter.Body.setPosition(stone1.body,boy1)
-} */  
+}   
 
-/*function mouseReleased(){
+function mouseReleased(){
   launcher1.fly();
-}*/
+}
 
-/*function detectCollission(lstone,lmango){
+function detectCollission(lstone,lmango){
     mangoBodyPosition= lmango.body.position;
     stoneBodyPosition = lstone.body.position;
 
@@ -67,7 +67,7 @@ function draw() {
    if(distance<-lmango.r+lstone.r){
      Matter.Body.setStatic(lmango.body,false);
    }
-}*/
+}
 
 
 
